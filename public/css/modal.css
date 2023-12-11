@@ -1,0 +1,30 @@
+
+/* Settings modal */
+.modal#edit-modal {
+    min-height: unset !important;
+    height: fit-content;
+    z-index: 99999;
+    border-radius: 1rem;
+}
+
+.modal#edit-modal form {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.modal#edit-modal form input,
+.modal#edit-modal form textarea {
+    width: 100%;
+    margin: 0 0 .3rem 0;
+    padding: .5rem;
+}
+
+.modal#edit-modal form div {
+    justify-content: space-between;
+}
+/* Settings modal */
+
+
+
+
+

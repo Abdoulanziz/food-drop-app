@@ -1,0 +1,6 @@
+/.env
+/node_modules
+/public/loader.js
+/public/manifest.json
+/public/sw-register.js
+/public/sw.js

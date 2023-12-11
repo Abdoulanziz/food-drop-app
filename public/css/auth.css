@@ -1,0 +1,258 @@
+body {
+  color: var(--text-color-primary);
+  background-color: #fff;
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 16px;
+  overflow-y: scroll;
+  padding-bottom: 0;
+}
+
+.container-fluid {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  block-size: 100vh;
+}
+
+.auth-reset,
+.auth-signin,
+.auth-signup {
+  inline-size: 100%;
+  /* display: none; */
+  padding: .8em .8em 0 .8em;
+}
+
+/* .auth.inview {
+  display: block;
+} */
+
+.auth-form {
+  flex-direction: column;
+  gap: .6rem;
+  inline-size: 100%;
+  font-weight: 100;
+}
+
+.auth-form .form-group {
+  inline-size: 100%;
+}
+
+.auth-form-title {
+  font-weight: 500;
+  font-size: 26px;
+  color: #afadad;
+}
+
+.auth-form-sub-title {
+  font-weight: 100;
+  color: #afadad;
+  font-weight: 400;
+  font-size: 16px;
+  margin-block-end: 1em;
+}
+
+.auth-form label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #bababa;
+}
+
+.auth-form .forgot-password {
+  font-weight: 400;
+  color: #afadad;
+}
+
+.auth-form .possess-account {
+  font-weight: 400;
+  color: #afadad;
+}
+
+.auth-form .possess-account span {
+  color: #afadad;
+  font-weight: 500;
+  margin-inline-start: .2em;
+}
+
+.auth-form .form-control[type="text"],
+.auth-form .form-control[type="email"],
+.auth-form .form-control[type="password"],
+.auth-form .form-control[type="submit"] {
+  inline-size: 100%;
+  padding: .5em 1em;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #333;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-form .form-control[type="text"],
+.auth-form .form-control[type="email"],
+.auth-form .form-control[type="password"] {
+  background-color: var(--primary-color);
+  margin-block-end: .2em;
+  color: #999;
+  border: 1px solid var(--theme-color);
+}
+
+.auth-form .toggleable-password {
+  position: relative;
+}
+
+.auth-form .password-toggler {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  inline-size: 20px;
+}
+
+.auth-form .form-control[type="submit"] {
+  color: #e2e1e1;
+  background-color: var(--accent-color);
+  margin-block-start: 1.2em;
+  font-weight: 400 !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.auth-form .form-control[type="submit"]:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.auth-form .form-control[type="text"]::placeholder,
+.auth-form .form-control[type="email"]::placeholder,
+.auth-form .form-control[type="password"]::placeholder {
+  color: #999;
+}
+
+.auth-form .form-control[type="text"]:-webkit-autofill,
+.auth-form .form-control[type="email"]:-webkit-autofill,
+.auth-form .form-control[type="password"]:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--primary-color) inset;
+  -webkit-text-fill-color: #999;
+  background-color: var(--primary-color) !important;
+}
+
+.auth-form .form-check-input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  inline-size: 16px;
+  block-size: 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px;
+}
+
+.auth-form .form-check-input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--theme-color);
+}
+
+.auth-form .form-check-input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  inline-size: 6px;
+  block-size: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  border-radius: 1px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.auth-form .form-check-input[type="checkbox"]:focus {
+  border-color: var(--accent-color);
+}
+
+
+
+
+.auth-providers {
+  justify-content: space-between;
+  inline-size: 100%;
+  gap: .8rem;
+}
+
+.auth-provider {
+  flex: 1;
+  padding: 0.5em 1.3em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1em;
+  border: 1px solid #d6d9dc;
+  text-align: center;
+  background: #ffffff;
+}
+
+.auth-provider.google-auth {
+  color: var(--text-color-primary);
+  border-color: #d6d9dc;
+}
+
+.auth-provider.facebook-auth {
+  color: #ffffff;
+  background-color: #395697;
+  border-color: transparent;
+}
+
+.auth-provider.google-auth label {
+  color: #909090;
+}
+
+.auth-provider.facebook-auth label {
+  color: #ffffff;
+}
+
+.auth-provider .svg-icon {
+  vertical-align: middle;
+  padding-block-end: 0.25em;
+}
+
+.auth-form .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(180, 1%, 32%);
+  gap: .75rem;
+  margin-block-start: .4em;
+  font-size: smaller;
+}
+
+.auth-form .separator::after,
+.auth-form .separator::before {
+  content: "";
+  inline-size: 20px;
+  border: 1px solid #afadad;
+}
+
+.auth-form .separator span {
+  font-weight: 400;
+  color: #afadad;
+}
+
+.auth-form .form-checkbox-and-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  inline-size: 100%;
+  margin-block-start: .4em;
+}
+
+.auth-form .form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
