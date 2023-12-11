@@ -1,3 +1,5 @@
+// import {Home} from "./components/Home";
+
 window.app = {};
 
 app.router = Router;

@@ -109,7 +109,6 @@ const Router = {
                 }, 100);
                 break;
 
-
             case "/auth/signup":
                 pageElement = document.createElement('div');
                 pageElement.innerHTML = `
@@ -536,7 +535,6 @@ const Router = {
                     pageElement.querySelector(".main").classList.add("active");
                 }, 100);
                 break;
-
 
             case "/account/cafeteria":
                 pageElement = document.createElement('div');
