@@ -1,9 +1,11 @@
-
-
 body,
 .root,
 .section-template {
   block-size: 100vh;
+}
+
+body {
+  /* background-color: #f3f4f7; */
 }
 
 .section-template {
@@ -204,7 +206,10 @@ body,
 
 
 
-
+.deliver-to.flex {
+  block-size: fit-content;
+  align-items: flex-end;
+}
 
 .search-form {
   background-color: #ffffff;
@@ -213,8 +218,9 @@ body,
 
 .search-form .form-control.flex {
   padding: 0;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid var(--text-color-green);
   border-radius: 9px;
+  background-color: var(--text-color-green);
 }
 
 .search-form .form-control input:focus {
@@ -222,19 +228,30 @@ body,
 }
 
 .search-form .form-control input {
-  padding: .8em;
+  padding: .86rem .8em;
   inline-size: 100%;
-  background-color: inherit;
-  border: none;
   font-size: 16px;
   font-family: var(--font-family-primary);
+  color: var(--text-color-light);
+  border: 1px solid var(--text-color-green) !important;
+  border-start-start-radius: 9px;
+  border-end-start-radius: 9px;
+  margin: 0;
+}
+
+.search-form .form-control input::placeholder,
+.search-form .form-control input::-webkit-input-placeholder,
+.search-form .form-control input:-moz-placeholder,
+.search-form .form-control input::-ms-input-placeholder,
+.search-form .form-control input:-ms-input-placeholder {
   color: var(--text-color-light);
 }
 
 .search-form .form-control img {
   block-size: 1.4rem;
   inline-size: 1.4rem;
-  margin-inline-end: .8em;
+  margin-inline: .8em;
+  border: 1px solid var(--text-color-green);
 }
 
 
@@ -337,7 +354,7 @@ body,
 
 
 .bottom-nav {
-  background-color: #ffffff;
+  background-color: #fda92a;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: fixed;
@@ -393,13 +410,13 @@ body,
 }
 
 .restaurant-card {
-  background-image: url("../assets/img/bg.jpeg") !important;
-  block-size: 210px;
+  background-image: url("../assets/img/bg.png") !important;
+  block-size: 180px;
   inline-size: 100%;
   background-size:cover;
   background-repeat: no-repeat;
   margin-block-start: .4rem;
-  border-radius: 9px;
+  border-radius: .6rem;
   object-fit: cover;
 }
 
@@ -410,12 +427,13 @@ body,
 
 .restaurant-card-wrapper h3 {
   margin-block-start: .4rem;
-  font-weight: 300;
+  font-weight: 400;
+  color: #292929FF;
 }
 
 .restaurant-card-wrapper h4 {
-  color: #8f8f8f;
-  font-weight: 300;
+  color: var(--text-color-light);
+  font-weight: 500;
 }
 
 .dishes.grid {
@@ -459,33 +477,84 @@ body,
 
 .dish.card {
   margin: 0;
-  padding: .6rem 0 0 0;
+  padding: 0;
   block-size: 180px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border: none;
+  box-shadow: unset !important;
 }
 
-.dish.card img {
-  inline-size: 90px;
-  block-size: 90px;
+.dish.card .dish-img-wrapper {
+  inline-size: 100%;
+  block-size: 184px;
+  border-radius: .6rem;
+  position: relative;
+  background-image: url("../assets/img/salads.png") !important;
+  border-radius: .6rem;
+  background-size: cover;
+  background-position: center; 
+  margin-block-start: .6rem;
+}
+
+.dish-info-badge {
+  position: absolute;
+  margin: .6rem .6rem 0 .6rem;
+  bottom: .4rem;
+  background: rgba(0,0,0,.6);
+  border-radius: .4rem;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 .4rem;
+}
+
+.dish-info-discount {
+  position: absolute;
+  margin: .6rem .6rem 0 .6rem;
+  top: -1rem;
+  right: .4rem;
+  color: var(--text-color-black);
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.6;
+  background-color: #fdc878;
+  padding: .066rem .6rem;
+  border-radius: .4rem;
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
 }
 
 .dish-info {
   inline-size: 100%;
   padding-inline: .6rem;
+  margin-block-start: .4rem;
+}
+
+.dish-info h3 {
+  font-weight: 400;
+  color: #292929FF;
+}
+
+.dish-info-reaction.flex {
+  justify-content: flex-start;
+  gap: .4rem;
+  block-size: fit-content;
+}
+
+.dish-info-reaction img {
+  block-size: 24px;
+  inline-size: 24px;
 }
 
 .dish-info h5 {
-  font-weight: 400;
-  color: #b1b1b1;
-}
-
-.dish-info h4 {
   font-weight: 500;
-  color: #878686;
+  color: var(--text-color-light);
 }
 
 .dish-ctas-wrapper.flex{

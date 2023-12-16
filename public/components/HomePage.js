@@ -1,11 +1,27 @@
-export class Home extends HTMLElement {
+export class HomePage extends HTMLElement {
     constructor() {
         super();
+        this.root = this.attachShadow({mode: "open"});
 
-        this.attachShadow({mode: "open"});
-        this.root = this.shadowRoot;
+        // const styles = document.createElement("style");
+        // this.root.appendChild(styles);
 
-        const template = document.createElement("div");
+        // (async () => {
+        //     const response1 = await fetch("../css/utils.css");
+        //     const response2 = await fetch("../css/app.css");
+        //     const response3 = await fetch("../assets/icons/themify-icons.css");
+
+        //     const css1 = await response1.text();
+        //     const css2 = await response2.text();
+        //     const css3 = await response3.text();
+
+        //     styles.textContent = css1 + css2 + css3;
+        // })();
+    }
+
+    // Do some setup
+    connectedCallback() {
+        const template = document.createElement("template");
         const content = `
             <div class="top">
                 <div class="container">
@@ -161,18 +177,21 @@ export class Home extends HTMLElement {
             </div>
             <div class="overlay d-none" id="page-overlay"></div>
         `;
+
         template.innerHTML = content;
+        this.root.appendChild(template.content.cloneNode(true));
 
-        this.root.appendChild(template);
+        const mainElement = this.root.querySelector(".main");
+        mainElement.classList.add("section-template");
+        setTimeout(() => {
+            mainElement.classList.add("active");
+        }, 100);
     }
 
-    // Do some setup
-    connectedCallback(){
-    }
 
     // Do some cleanup
     disconnectedCallback(){
     }
 }
 
-customElements.define("fd-home", Home);
+customElements.define("home-page", HomePage);
