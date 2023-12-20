@@ -37,8 +37,8 @@ export class HomePage extends HTMLElement {
                             <div class="border-fill"></div>
                             <img src="/assets/img/profiledefault.png" alt="Profile picture" class="avatar" />
                         </div>
-                        <h3 class="name" id="full-name">John Smith</h3>
-                        <h6 class="user-email" id="email-primary">johnsmith@gmail.com</h6>
+                        <h3 class="name" id="full-name">Abdoulanziz Ally</h3>
+                        <h6 class="user-email" id="email-primary">abdoulanzizally@outlook.com</h6>
                         </div>
                     </div>
                     <ul class="nav-drawer-items">
@@ -56,7 +56,7 @@ export class HomePage extends HTMLElement {
                         </li>
                         <li class="nav-drawer-item flex">
                             <a href="/auth/signin" class="footer">
-                                <span><i class="ti-power-off left"></i> <span class="nav-drawer-link">Signout</span></span>
+                                <span class="flex"><img src="/assets/svg/signout.png" /> <span class="nav-drawer-link">Signout</span></span>
                             </a>
                         </li>
                     </ul>

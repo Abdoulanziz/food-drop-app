@@ -122,7 +122,7 @@ body,
 }
 
 .nav-drawer-profile .card.flex h3 {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 16px;
   color: #3d3d3d;
 }
@@ -186,8 +186,13 @@ body,
   font-weight: 400;
 }
 
-.nav-drawer-menu .nav-drawer-items .nav-drawer-item a.footer i {
-  background-color: #f4f4f4;
+.nav-drawer-menu .nav-drawer-items .nav-drawer-item a.footer > span.flex {
+  justify-content: flex-start;
+}
+
+.nav-drawer-menu .nav-drawer-items .nav-drawer-item a.footer img {
+  inline-size: 28px;
+  block-size: 28px;
 }
 
 
