@@ -100,7 +100,7 @@ const UX = {
       case "Cafeterias":
         Router.go("/account/cafeterias");
         app.ui.init();
-        app.ui.renderGoogleMap();
+        // app.ui.renderGoogleMap();
         break;
 
       case "Orders":

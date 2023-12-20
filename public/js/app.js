@@ -1,4 +1,8 @@
 import { HomePage } from "../components/HomePage.js";
+import { CafeteriasPage } from "../components/CafeteriasPage.js";
+import { CafeteriaPage } from "../components/CafeteriaPage.js";
+import { OrdersPage } from "../components/OrdersPage.js";
+import { SettingsPage } from "../components/SettingsPage.js";
 
 window.app = {};
 

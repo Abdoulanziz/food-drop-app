@@ -4,10 +4,6 @@ body,
   block-size: 100vh;
 }
 
-body {
-  /* background-color: #f3f4f7; */
-}
-
 .section-template {
   position: relative;
   inline-size: 100%;
@@ -114,6 +110,7 @@ body {
   background-color: var(--brand-color-primary);
   padding-block-end: 1.2em;
   border-block-end: 1px solid #eeeeee;
+  box-shadow: unset !important;
 }
 
 .nav-drawer-profile .card.flex img {
@@ -127,13 +124,13 @@ body {
 .nav-drawer-profile .card.flex h3 {
   font-weight: 400;
   font-size: 16px;
-  color: #f3f3f3;
+  color: #3d3d3d;
 }
 
 .nav-drawer-profile .card.flex h6 {
   font-weight: 400;
   font-size: 14px;
-  color: #cdcdcd;
+  color: #464646;
 }
 
 .nav-drawer-menu {

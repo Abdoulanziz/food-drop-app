@@ -18,13 +18,8 @@ body {
 .auth-signin,
 .auth-signup {
   inline-size: 100%;
-  /* display: none; */
   padding: .8em .8em 0 .8em;
 }
-
-/* .auth.inview {
-  display: block;
-} */
 
 .auth-form {
   flex-direction: column;
