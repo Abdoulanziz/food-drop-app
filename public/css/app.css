@@ -165,33 +165,22 @@ body {
 .nav-drawer-menu .nav-drawer-items .nav-drawer-item a {
   margin: unset;
   block-size: auto;
-  padding: 1.2em 0.86em;
+  padding: .8em 0.86em;
   border-block-end: 1px solid #f1f1f1;
   color: var(--text-color-primary);
   inline-size: 100%;
 }
 
-.nav-drawer-menu .nav-drawer-items .nav-drawer-item i {
+.nav-drawer-menu .nav-drawer-items .nav-drawer-item a .left-icon-container .image-container {
   border-radius: 50%;
-  padding: 0.8em;
+  block-size: 40px;
+  inline-size: 40px;
+  background-color: #fbb040;
 }
 
-.nav-drawer-menu .nav-drawer-items .nav-drawer-item:nth-child(1) i.left {
-  background-color: #34bf49;
-  color: #ffffff;
-  font-weight: 800;
-}
-
-.nav-drawer-menu .nav-drawer-items .nav-drawer-item:nth-child(2) i.left {
-  background-color: #511378;
-  color: #ffffff;
-  font-weight: 800;
-}
-
-.nav-drawer-menu .nav-drawer-items .nav-drawer-item:nth-child(3) i.left {
-  background-color: #0099e5;
-  color: #ffffff;
-  font-weight: 800;
+.nav-drawer-menu .nav-drawer-items .nav-drawer-item a .left-icon-container img {
+  block-size: 20px;
+  inline-size: 20px;
 }
 
 .nav-drawer-menu .nav-drawer-items .nav-drawer-item .nav-drawer-link {
@@ -656,6 +645,7 @@ body {
 .cards-setting-item .content.flex .icon.icon-phone {
   background-color: #34bf49;
 }
+
 .cards-setting-item .content.flex .icon.icon-contact {
   background-color: #511378;
 }

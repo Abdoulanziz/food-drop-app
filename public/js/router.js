@@ -335,21 +335,21 @@ const Router = {
                         </div>
                         <ul class="nav-drawer-items">
                             <li class="nav-drawer-item flex">
-                            <a href="/account/orders" class="flex">
-                                <span><i class="ti-link left"></i> <span class="nav-drawer-link">Orders</span></span>
-                                <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
-                            </a>
+                                <a href="/account/orders" class="flex">
+                                    <span class="left-icon-container flex"><div class="image-container flex"><img src="/assets/svg/orders.png" /></div> <span class="nav-drawer-link">Orders</span></span>
+                                    <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
+                                </a>
                             </li>
                             <li class="nav-drawer-item flex">
-                            <a href="/account/settings" class="flex">
-                                <span><i class="ti-settings left"></i> <span class="nav-drawer-link">Settings</span></span>
-                                <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
-                            </a>
+                                <a href="/account/settings" class="flex">
+                                    <span class="left-icon-container flex"><div class="image-container flex"><img src="/assets/svg/profile.png" /></div> <span class="nav-drawer-link">Profile</span></span>
+                                    <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
+                                </a>
                             </li>
                             <li class="nav-drawer-item flex">
-                            <a href="/auth/signin" class="footer">
-                                <span><i class="ti-power-off left"></i> <span class="nav-drawer-link">Signout</span></span>
-                            </a>
+                                <a href="/auth/signin" class="footer">
+                                    <span><i class="ti-power-off left"></i> <span class="nav-drawer-link">Signout</span></span>
+                                </a>
                             </li>
                         </ul>
                     </div>
