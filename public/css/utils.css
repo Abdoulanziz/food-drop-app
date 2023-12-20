@@ -160,6 +160,22 @@ input[type="password"]:focus {
   border-radius: 50%;
 }
 
+.angle-right {
+  block-size: 28px !important;
+  inline-size: 28px !important;
+}
+
+.back-icon {
+  block-size: 22px !important;
+  inline-size: 22px !important;
+  margin-inline-end: .4rem;
+}
+
+.arrow-right-icon {
+  block-size: 40px !important;
+  inline-size: 40px !important;
+}
+
 .title.flex {
   justify-content: space-between;
   margin-block: .8rem .4rem;

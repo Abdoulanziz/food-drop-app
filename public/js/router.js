@@ -337,13 +337,13 @@ const Router = {
                             <li class="nav-drawer-item flex">
                             <a href="/account/orders" class="flex">
                                 <span><i class="ti-link left"></i> <span class="nav-drawer-link">Orders</span></span>
-                                <span><i class="ti-angle-right"></i></span>
+                                <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
                             </a>
                             </li>
                             <li class="nav-drawer-item flex">
                             <a href="/account/settings" class="flex">
                                 <span><i class="ti-settings left"></i> <span class="nav-drawer-link">Settings</span></span>
-                                <span><i class="ti-angle-right"></i></span>
+                                <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
                             </a>
                             </li>
                             <li class="nav-drawer-item flex">
@@ -376,7 +376,7 @@ const Router = {
                         <div class="container">
                             <div class="title flex">
                                 <h4 class="label left">Popular Dishes</h4>
-                                <h4 class="value right">See All <i class="ti-angle-right"></i> </h4>
+                                <h4 class="value right flex">See All <img src="/assets/svg/angle-right.png" class="angle-right" /> </h4>
                             </div>
                         </div>
                         <div class="container">
@@ -423,7 +423,7 @@ const Router = {
                         <div class="container">
                             <div class="title flex">
                                 <h4 class="label left">Cafeterias Near You</h4>
-                                <h4 class="value right">See All <i class="ti-angle-right"></i> </h4>
+                                <h4 class="value right flex">See All <img src="/assets/svg/angle-right.png" class="angle-right" /> </h4>
                             </div>
                         </div>
                         <div class="container">
@@ -470,10 +470,10 @@ const Router = {
                         <div class="top-navbar">
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
-                                    <img src="/assets/svg/back.png" alt="back icon" class="icon" />
+                                    <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
                                     <h4>Cafeterias</h4>
                                 </div>
-                                <img src="/assets/svg/bag.png" alt="shopping bag icon" />
+                                <san></span>
                             </div>
                         </div>
                     </div>
@@ -492,8 +492,8 @@ const Router = {
                             <span class="title">Home</span>
                         </div>
                         <div class="item flex nav-cta">
-                            <span class="cta"><img class="cta-icon icon" src="/assets/svg/category-active.svg" /></span>
-                            <span class="title active">Cafeterias</span>
+                            <span class="cta"><img class="cta-icon icon" src="/assets/svg/category.png" /></span>
+                            <span class="title">Cafeterias</span>
                         </div>
                         <div class="item flex nav-cta">
                             <span class="cta"><img class="cta-icon icon" src="/assets/svg/orders.png" /></span>
@@ -534,7 +534,7 @@ const Router = {
                         <div class="top-navbar">
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
-                                    <img src="/assets/svg/back.png" alt="back icon" class="icon" />
+                                    <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
                                     <h4>Chillies Restaurant</h4>
                                 </div>
                                 <img src="/assets/svg/bag.png" alt="shopping bag icon" />
@@ -685,7 +685,7 @@ const Router = {
                         <div class="top-navbar">
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
-                                    <img src="/assets/svg/back.png" alt="back icon" class="icon" />
+                                    <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
                                     <h4>My Orders</h4>
                                 </div>
                                 <span></span>
@@ -774,7 +774,7 @@ const Router = {
                         <div class="top-navbar">
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
-                                    <img src="/assets/svg/back.png" alt="back icon" class="icon" />
+                                    <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
                                     <h4>My Profile</h4>
                                 </div>
                                 <span></span>
@@ -831,7 +831,7 @@ const Router = {
                                 </h6>
                                 </div>
                             </div>
-                            <span><i class="ti-angle-right"></i></span>
+                            <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
                             </div>
                         </li>
                         </ul>
@@ -854,7 +854,7 @@ const Router = {
                                 <h6 class="">+255 782 615 136</h6>
                                 </div>
                             </div>
-                            <span><i class="ti-angle-right"></i></span>
+                            <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
                             </div>
                         </li>
                         <li class="cards-setting-item">
@@ -870,7 +870,7 @@ const Router = {
                                 <h6 class="">Not provided</h6>
                                 </div>
                             </div>
-                            <span><i class="ti-angle-right"></i></span>
+                            <span><img src="/assets/svg/angle-right.png" class="angle-right" /></span>
                             </div>
                         </li>
                         </ul>
