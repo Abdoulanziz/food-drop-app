@@ -147,8 +147,8 @@ input[type="password"]:focus {
 }
 
 .arrow-right-icon {
-  block-size: 40px !important;
-  inline-size: 40px !important;
+  block-size: 28px;
+  inline-size: 28px;
 }
 
 .icon-close {
@@ -261,7 +261,7 @@ h4.value.flex img {
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  padding: .6rem .6rem;
+  padding: .68rem .6rem;
   display: flex;
   justify-content: center;
   align-items: center;

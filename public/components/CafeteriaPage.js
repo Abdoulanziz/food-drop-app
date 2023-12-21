@@ -35,10 +35,10 @@ export class CafeteriaPage extends HTMLElement {
                 </div>
                 <div class="main">
                     <div class="container">
-                        <form class="search-form flex" style="justify-content: space-between;gap: .6rem;">
-                            <div class="form-control flex" style="flex: 1;">
-                                <img src="/assets/svg/magnifier.png" alt="search icon" style="margin-inline-start: .6rem; margin-inline-end: 0;">
-                                <input type="text" id="search" placeholder="Search dishes" />
+                        <form class="search-form flex" style="justify-content: space-between;gap: .2rem;">
+                            <div class="form-control flex">
+                                <input type="text" id="search" placeholder="Search dishes, cafeterias" />
+                                <img src="/assets/svg/magnifier.png" alt="search icon">
                             </div>
                             <div class="search-filter">
                                 <img src="/assets/svg/filter.png" />

@@ -25,10 +25,6 @@ body,
 }
 
 .top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 1;
 }
@@ -43,7 +39,7 @@ body,
 }
 
 .main {
-  padding-block: 60px 100px;
+  padding-block-end: 74px;
   z-index: 0;
 }
 
@@ -346,8 +342,6 @@ body,
 
 .bottom-nav {
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   position: fixed;
   z-index: var(--z-index-1);
   bottom: 0;
@@ -425,6 +419,7 @@ body,
 .restaurant-card-wrapper h4 {
   color: var(--text-color-light);
   font-weight: 500;
+  margin-block-end: .8rem;
 }
 
 .dishes.grid {

@@ -149,7 +149,7 @@ export class CafeteriasPage extends HTMLElement {
                                 <h3>And fall in love with our foods prepared by well qualified chefs!</h3>
 
                                 
-                                <button id="go-to-cafeteria-btn" style="margin-top: 30px; padding: 14px 16px; background-color: #fbb040; color: #fff; border: none; border-radius: 50%; cursor: pointer;">
+                                <button id="go-to-cafeteria-btn" style="margin-top: 30px; padding: 8px 10px; background-color: #fbb040; color: #fff; border: none; border-radius: 50%; cursor: pointer;">
                                     <img src="/assets/svg/arrow-right.png" class="arrow-right-icon" />
                                 </button>
                             </div>

@@ -34,10 +34,10 @@ export class SettingsPage extends HTMLElement {
                     </div>
                 </div>
                 <div class="main">
-                    <div class="container cards">
+                    <div class="container cards" style="margin-block: 0;">
                     <div class="cards-item my-profile">
                         <div class="container" style="padding-inline: 0">
-                        <div class="title flex" style="margin-block-end: .4rem;">
+                        <div class="title flex" style="margin-block: 0 .4rem;">
                             <h4 class="left">Profile Info</h4>
                         </div>
                         </div>
