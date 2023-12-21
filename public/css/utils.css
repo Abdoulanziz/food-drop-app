@@ -151,6 +151,11 @@ input[type="password"]:focus {
   inline-size: 40px !important;
 }
 
+.icon-close {
+  block-size: 18px;
+  inline-size: 22px;
+}
+
 .title.flex {
   justify-content: space-between;
   margin-block: .8rem .4rem;

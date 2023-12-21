@@ -171,6 +171,16 @@ export class CafeteriaPage extends HTMLElement {
                 mainElement.classList.add("active");
             }, 100);
 
+            // Get all back buttons
+            const backButtons = this.root.querySelectorAll(".top-navbar .icon");
+            backButtons.forEach(button => {
+                if(button.getAttribute("id") !== "toggle-nav-drawer-icon"){
+                    button.addEventListener("click", () => {
+                        Router.goBack();
+                    })
+                }
+            });
+
         })();
         
     }
