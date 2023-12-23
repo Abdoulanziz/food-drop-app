@@ -26,9 +26,9 @@ export class CafeteriaPage extends HTMLElement {
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
                                     <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
-                                    <h4>Chillies Restaurant</h4>
+                                    <h4>Pepe Delgado's</h4>
                                 </div>
-                                <img src="/assets/svg/bag.png" alt="shopping bag icon" />
+                                <san></span>
                             </div>
                         </div>
                     </div>
@@ -37,35 +37,13 @@ export class CafeteriaPage extends HTMLElement {
                     <div class="container">
                         <form class="search-form flex" style="justify-content: space-between;gap: .2rem;">
                             <div class="form-control flex">
-                                <input type="text" id="search" placeholder="Search dishes, cafeterias" />
+                                <input type="text" id="search" placeholder="Search dishes" />
                                 <img src="/assets/svg/magnifier.png" alt="search icon">
                             </div>
                             <div class="search-filter">
                                 <img src="/assets/svg/filter.png" />
                             </div>
                         </form>
-                    </div>
-                    <div class="container">
-                        <div class="dishes common-categories flex" style="margin-block-end: 0;">
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                            <div class="common-category-card">
-                                <h4>Pizzas</h4>
-                            </div>
-                        </div>
                     </div>
                     <div class="container">
                         <div class="title flex">
@@ -149,15 +127,15 @@ export class CafeteriaPage extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <div class="bottom-slider" id="bottom-slider" style="block-size: 90% !important;">
-                <div class="wrapper flex">
-                    <div class="title flex">
-                    <span></span>
-                    <span id="cta-close-bottom-slider"><i class="ti-close"></i></span>
+                <div class="bottom-slider" id="bottom-slider">
+                    <div class="wrapper flex">
+                        <div class="title flex">
+                            <span><i class="ti-location-pin" style="font-size: 32px;"></i></span>
+                            <span id="cta-close-bottom-slider"><img src="/assets/svg/icon-close.png" class="icon-close" /></span>
+                        </div>
+                        <div class="restaurant-data">
+                        </div>
                     </div>
-                    <div class="dish-data">
-                    </div>
-                </div>
                 </div>
                 <div class="overlay d-none" id="page-overlay"></div>
             `;
@@ -180,6 +158,31 @@ export class CafeteriaPage extends HTMLElement {
                     })
                 }
             });
+
+            // Function to toggle the bottom slider
+            const pageRoot = this.root;
+            function toggleBottomSlider() {
+                const bottomSlider = pageRoot.querySelector("#bottom-slider");
+                bottomSlider.classList.toggle("slide");
+            }
+
+            // Event listener for closing the bottom slider
+            const bottomSliderCloseBtn = pageRoot.querySelector("#cta-close-bottom-slider");
+            if (bottomSliderCloseBtn) {
+                bottomSliderCloseBtn.addEventListener("click", () => {
+                    toggleBottomSlider();
+                    // clearAndAppendContent('');
+                });
+            }
+
+            // Trigger bottom slider
+            const bottomSliderTriggers = pageRoot.querySelectorAll(".dish-info h3");
+            if (bottomSliderTriggers) {
+                bottomSliderTriggers.forEach(trigger => trigger.addEventListener("click", () => {
+                    toggleBottomSlider();
+                    // clearAndAppendContent('');
+                }));
+            }
 
         })();
         
