@@ -1,3 +1,6 @@
+import { SignupPage } from "../components/SignupPage.js";
+import { SigninPage } from "../components/SigninPage.js";
+import { ForgotPasswordPage } from "../components/ForgotPasswordPage.js";
 import { HomePage } from "../components/HomePage.js";
 import { CafeteriasPage } from "../components/CafeteriasPage.js";
 import { CafeteriaPage } from "../components/CafeteriaPage.js";
