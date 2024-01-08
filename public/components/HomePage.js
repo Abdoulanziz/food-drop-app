@@ -24,7 +24,7 @@ export class HomePage extends HTMLElement {
                         <div class="top-navbar">
                             <div class="top-navbar-icons flex">
                                 <img src="/assets/svg/menu.png" alt="menu icon" id="toggle-nav-drawer" data-target="nav-drawer" />
-                                <img src="/assets/svg/bag.png" alt="shopping bag icon" />
+                                <img src="/assets/svg/bag.png" alt="shopping bag icon" id="trigger-cart-sheet" />
                             </div>
                         </div>
                     </div>
@@ -166,6 +166,29 @@ export class HomePage extends HTMLElement {
                         </div>
                     </div>
                 </div>
+                <div class="bottom-slider" id="bottom-slider" style="block-size: 90vh;">
+                    <div class="wrapper flex">
+                        <div class="title flex">
+                            <span><i class="ti-location-pin" style="font-size: 32px;"></i></span>
+                            <span id="cta-close-bottom-slider"><img src="/assets/svg/icon-close.png" class="icon-close" /></span>
+                        </div>
+                        <div class="dish-add-to-cart-sheet">
+                            <div class="cart-items">
+                                <div class="cart-item">
+                                    <img src="/assets/img/00.png" alt="Product Image">
+                                    <h2>Burger</h2>
+                                    <p>Price: <span class="dish-price">12 Pts</span></p>
+                                    <div class="quantity">
+                                        <span class="decrement decrement-cta">-</span>
+                                        <input type="text" class="quantity-input" value="1">
+                                        <span class="increment increment-cta">+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="add-to-cart">Place Order</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="overlay d-none" id="page-overlay"></div>
             `;
 
@@ -198,6 +221,31 @@ export class HomePage extends HTMLElement {
                     })
                 }
             });
+
+            // Function to toggle the bottom slider
+            const pageRoot = this.root;
+            function toggleBottomSlider() {
+                const bottomSlider = pageRoot.querySelector("#bottom-slider");
+                bottomSlider.classList.toggle("slide");
+            }
+
+            // Event listener for closing the bottom slider
+            const bottomSliderCloseBtn = pageRoot.querySelector("#cta-close-bottom-slider");
+            if (bottomSliderCloseBtn) {
+                bottomSliderCloseBtn.addEventListener("click", () => {
+                    toggleBottomSlider();
+                    // clearAndAppendContent('');
+                });
+            }
+
+            // Trigger bottom slider
+            const bottomSliderTrigger = pageRoot.querySelector("#trigger-cart-sheet");
+            if (bottomSliderTrigger) {
+                bottomSliderTrigger.addEventListener("click", () => {
+                    toggleBottomSlider();
+                    // clearAndAppendContent('');
+                });
+            }
 
             // Special to home page
             // Navdrawer

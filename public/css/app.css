@@ -490,7 +490,27 @@ body,
   background-image: url("../assets/img/09.png") !important;
 }
 
+.dish.card:nth-child(4) .dish-img-wrapper {
+  background-image: url("../assets/img/07.png") !important;
+}
+
 .dish.card:nth-child(3) .dish-img-wrapper {
+  background-image: url("../assets/img/18.png") !important;
+}
+
+.dish.card:nth-child(5) .dish-img-wrapper {
+  background-image: url("../assets/img/12.png") !important;
+}
+
+.dish.card:nth-child(6) .dish-img-wrapper {
+  background-image: url("../assets/img/13.png") !important;
+}
+
+.dish.card:nth-child(7) .dish-img-wrapper {
+  background-image: url("../assets/img/15.png") !important;
+}
+
+.dish.card:nth-child(8) .dish-img-wrapper {
   background-image: url("../assets/img/18.png") !important;
 }
 
@@ -588,7 +608,7 @@ body,
 
 .dish-add-to-cart-sheet .quantity-input {
   text-align: center;
-  padding-block: .6rem;
+  padding: .8rem;
   border: none;
 }
 

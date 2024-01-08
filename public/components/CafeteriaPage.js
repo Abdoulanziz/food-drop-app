@@ -76,10 +76,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>Greek House</h3>
+                                    <h3>12 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>86% (14)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -88,10 +88,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>The Mont</h3>
+                                    <h3>50 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>90% (68)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -100,10 +100,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>The Mont</h3>
+                                    <h3>10 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>76% (100+)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -112,10 +112,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>The Mont</h3>
+                                    <h3>30 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>91% (55)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -124,10 +124,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>The Mont</h3>
+                                    <h3>17 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>74% (45)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -136,10 +136,10 @@ export class CafeteriaPage extends HTMLElement {
                                     <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
-                                    <h3>The Mont</h3>
+                                    <h3>68 Pts</h3>
                                     <div class="dish-info-reaction flex">
                                         <img src="/assets/svg/like.svg" />
-                                        <h5>96%</h5>
+                                        <h5>80% (100+)</h5>
                                     </div>
                                 </div>
                             </div>
@@ -155,13 +155,13 @@ export class CafeteriaPage extends HTMLElement {
                         <div class="dish-add-to-cart-sheet">
                             <img src="/assets/img/00.png" alt="Product Image">
                             <h2>Burger</h2>
-                            <p>Price: <span class="dish-price">10 Pts</span></p>
+                            <p>Price: <span class="dish-price">12 Pts</span></p>
                             <div class="quantity">
                                 <span class="decrement decrement-cta">-</span>
                                 <input type="text" class="quantity-input" value="1">
                                 <span class="increment increment-cta">+</span>
                             </div>
-                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="add-to-cart">Add To Cart</button>
                         </div>
                     </div>
                 </div>
