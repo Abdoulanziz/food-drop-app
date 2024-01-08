@@ -149,7 +149,7 @@ export class CafeteriaPage extends HTMLElement {
                 <div class="bottom-slider" id="bottom-slider">
                     <div class="wrapper flex">
                         <div class="title flex">
-                            <span><i class="ti-location-pin" style="font-size: 32px;"></i></span>
+                            <span><h2>Add To Cart</h2></span>
                             <span id="cta-close-bottom-slider"><img src="/assets/svg/icon-close.png" class="icon-close" /></span>
                         </div>
                         <div class="dish-add-to-cart-sheet">

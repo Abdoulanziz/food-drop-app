@@ -166,26 +166,68 @@ export class HomePage extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <div class="bottom-slider" id="bottom-slider" style="block-size: 90vh;">
+                <div class="bottom-slider" id="bottom-slider" style="block-size: 90vh;overflow-y: auto;">
                     <div class="wrapper flex">
                         <div class="title flex">
-                            <span><i class="ti-location-pin" style="font-size: 32px;"></i></span>
+                            <span><h2>My Cart</h2></span>
                             <span id="cta-close-bottom-slider"><img src="/assets/svg/icon-close.png" class="icon-close" /></span>
                         </div>
-                        <div class="dish-add-to-cart-sheet">
+                        <div class="cart-sheet">
                             <div class="cart-items">
-                                <div class="cart-item">
-                                    <img src="/assets/img/00.png" alt="Product Image">
-                                    <h2>Burger</h2>
-                                    <p>Price: <span class="dish-price">12 Pts</span></p>
-                                    <div class="quantity">
+                                <div class="cart-item flex">
+                                    <div class="item flex">
+                                        <img src="/assets/img/00.png" alt="Product Image">
+                                        <div class="text flex">
+                                            <h2>Burger</h2>
+                                            <p><span class="dish-price">14 Pts</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="quantity flex">
+                                        <span class="decrement decrement-cta">-</span>
+                                        <input type="text" class="quantity-input" value="1">
+                                        <span class="increment increment-cta">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item flex">
+                                    <div class="item flex">
+                                        <img src="/assets/img/11.png" alt="Product Image">
+                                        <div class="text flex">
+                                            <h2>Grill</h2>
+                                            <p><span class="dish-price">10 Pts</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="quantity flex">
+                                        <span class="decrement decrement-cta">-</span>
+                                        <input type="text" class="quantity-input" value="1">
+                                        <span class="increment increment-cta">+</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item flex">
+                                    <div class="item flex">
+                                        <img src="/assets/img/12.png" alt="Product Image">
+                                        <div class="text flex">
+                                            <h2>Chicken</h2>
+                                            <p><span class="dish-price">12 Pts</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="quantity flex">
                                         <span class="decrement decrement-cta">-</span>
                                         <input type="text" class="quantity-input" value="1">
                                         <span class="increment increment-cta">+</span>
                                     </div>
                                 </div>
                             </div>
-                            <button class="add-to-cart">Place Order</button>
+                            <div class="points-card">
+                                <img src="/assets/svg/reward.png" />
+                                <h6>You have 156 Pts left</h6>
+                            </div>
+                            <div class="cart-money">
+                                <h4>Total</h4>
+                                <h4>36 Pts</h4>
+                            </div>
+                            <div class="cart-checkout">
+                                <button class="btn btn-primary btn-checkout">Checkout</button>
+                            </div>
                         </div>
                     </div>
                 </div>
