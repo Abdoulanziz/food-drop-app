@@ -450,16 +450,13 @@ body,
 
 .dishes.common-categories .common-category-card {
   padding: .4rem 1.2rem;
-  background-color: beige;
+  background-color: #FFF3DAFF;
   border-radius: 15px;
 }
 
-.dishes.common-categories .common-category-card:nth-child(1) {background-color: #dbeede;}
-.dishes.common-categories .common-category-card:nth-child(2) {background-color: #ebffac;}
-.dishes.common-categories .common-category-card:nth-child(3) {background-color: #ffdc80;}
-.dishes.common-categories .common-category-card:nth-child(4) {background-color: #e0d86e;}
-.dishes.common-categories .common-category-card:nth-child(5) {background-color: #b6acd1;}
-.dishes.common-categories .common-category-card:nth-child(6) {background-color: #dbe3b6;}
+.dishes.common-categories .common-category-card.active {
+  background-color: #FFB928FF;
+}
 
 .dish.card {
   margin: 0;
@@ -478,11 +475,23 @@ body,
   block-size: 184px;
   border-radius: .6rem;
   position: relative;
-  background-image: url("../assets/img/salads.png") !important;
+  background-image: url("../assets/img/bckg-pattern.svg") !important;
   border-radius: .6rem;
   background-size: cover;
   background-position: center; 
   margin-block-start: .6rem;
+}
+
+.dish.card:nth-child(1) .dish-img-wrapper {
+  background-image: url("../assets/img/00.png") !important;
+}
+
+.dish.card:nth-child(2) .dish-img-wrapper {
+  background-image: url("../assets/img/09.png") !important;
+}
+
+.dish.card:nth-child(3) .dish-img-wrapper {
+  background-image: url("../assets/img/18.png") !important;
 }
 
 .dish-info-badge {
@@ -543,35 +552,69 @@ body,
   color: var(--text-color-light);
 }
 
-.dish-ctas-wrapper.flex{
-  justify-content: flex-end;
-}
-
-.dish-ctas {
-  border-end-end-radius: 9px;
-  border-end-start-radius: 9px;
-  border: 0;
+.dish-add-to-cart-sheet {
+  text-align: center;
   padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: .9;
+  background-color: inherit;
 }
 
-.dish .increment {
-  background-color: var(--brand-color-primary);
-  border-end-end-radius: 9px;
-  border-start-start-radius: 9px;
-  padding: .6rem .8rem;
-  margin: 0;
-  cursor: pointer;
+.dish-add-to-cart-sheet img {
+  block-size: 180px;
+  inline-size: 100%;
+  border-radius: 13px;
 }
 
-.dish .increment .ti-plus {
+.dish-add-to-cart-sheet h2 {
+  font-weight: normal;
+  font-size: 26px;
+  color: #333333;
+}
+
+.dish-add-to-cart-sheet p {
+  font-weight: normal;
+  font-size: 20px;
+  color: #666666;
+  margin-block-end: .6rem;
+}
+
+.dish-add-to-cart-sheet .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: .05rem;
+}
+
+.dish-add-to-cart-sheet .quantity-input {
+  text-align: center;
+  padding-block: .6rem;
+  border: none;
+}
+
+.dish-add-to-cart-sheet .quantity > .increment,
+.dish-add-to-cart-sheet .quantity >.decrement {
+  padding-inline: 1.4rem;
+  padding-block: .6rem;
+  color: #333333;
   font-weight: bold;
-  color: #fff;
+  font-size: 18px;
+  background-color: var(--brand-color-primary);
+  border: none;
+  border-radius: 10px;
 }
+
+.dish-add-to-cart-sheet .add-to-cart {
+  font-size: 20px;
+  padding: .9rem .86rem;
+  margin-block-start: 1.2rem;
+  inline-size: 100%;
+  color: #333333;
+  background-color: var(--brand-color-primary);
+  border: none;
+  border-radius: 10px;
+}
+/* Product add to cart sheet */
 
 
 /* Cards */

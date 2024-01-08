@@ -91,7 +91,7 @@ export class HomePage extends HTMLElement {
                         <div class="dishes flex" style="margin-block-end: 0;">
                         <div class="dish card">
                             <div class="dish-img-wrapper">
-                                <div class="dish-info-badge">Burgers</div>
+                                <div class="dish-info-badge">Burger</div>
                                 <div class="dish-info-discount">-45%</div>
                             </div>
                             <div class="dish-info">
@@ -104,7 +104,7 @@ export class HomePage extends HTMLElement {
                         </div>
                         <div class="dish card">
                             <div class="dish-img-wrapper">
-                                <div class="dish-info-badge">Burgers</div>
+                                <div class="dish-info-badge">Sandwich</div>
                             </div>
                             <div class="dish-info">
                                 <h3>The Mont</h3>
@@ -116,7 +116,7 @@ export class HomePage extends HTMLElement {
                         </div>
                         <div class="dish card">
                             <div class="dish-img-wrapper">
-                                <div class="dish-info-badge">Burgers</div>
+                                <div class="dish-info-badge">Grill</div>
                             </div>
                             <div class="dish-info">
                                 <h3>The Mont</h3>

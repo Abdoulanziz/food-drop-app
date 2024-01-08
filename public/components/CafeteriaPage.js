@@ -26,7 +26,7 @@ export class CafeteriaPage extends HTMLElement {
                             <div class="top-navbar-icons flex">
                                 <div class="flex">
                                     <img src="/assets/svg/back.png" alt="back icon" class="icon back-icon" />
-                                    <h4>Pepe Delgado's</h4>
+                                    <h4>Greek House</h4>
                                 </div>
                                 <san></span>
                             </div>
@@ -35,15 +35,34 @@ export class CafeteriaPage extends HTMLElement {
                 </div>
                 <div class="main">
                     <div class="container">
-                        <form class="search-form flex" style="justify-content: space-between;gap: .2rem;">
+                        <form class="search-form">
                             <div class="form-control flex">
                                 <input type="text" id="search" placeholder="Search dishes" />
                                 <img src="/assets/svg/magnifier.png" alt="search icon">
                             </div>
-                            <div class="search-filter">
-                                <img src="/assets/svg/filter.png" />
-                            </div>
                         </form>
+                    </div>
+                    <div class="container">
+                        <div class="dishes common-categories flex" style="margin-block-end: 0;">
+                            <div class="common-category-card active">
+                                <h4>Burgers</h4>
+                            </div>
+                            <div class="common-category-card">
+                                <h4>Snacks</h4>
+                            </div>
+                            <div class="common-category-card">
+                                <h4>Sandwich</h4>
+                            </div>
+                            <div class="common-category-card">
+                                <h4>Pizzas</h4>
+                            </div>
+                            <div class="common-category-card">
+                                <h4>Grill</h4>
+                            </div>
+                            <div class="common-category-card">
+                                <h4>Fastfood</h4>
+                            </div>
+                        </div>
                     </div>
                     <div class="container">
                         <div class="title flex">
@@ -54,7 +73,7 @@ export class CafeteriaPage extends HTMLElement {
                         <div class="dishes grid" style="margin-block-end: 0;">
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>Greek House</h3>
@@ -66,7 +85,7 @@ export class CafeteriaPage extends HTMLElement {
                             </div>
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>The Mont</h3>
@@ -78,7 +97,7 @@ export class CafeteriaPage extends HTMLElement {
                             </div>
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>The Mont</h3>
@@ -90,7 +109,7 @@ export class CafeteriaPage extends HTMLElement {
                             </div>
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>The Mont</h3>
@@ -102,7 +121,7 @@ export class CafeteriaPage extends HTMLElement {
                             </div>
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>The Mont</h3>
@@ -114,7 +133,7 @@ export class CafeteriaPage extends HTMLElement {
                             </div>
                             <div class="dish card">
                                 <div class="dish-img-wrapper">
-                                    <div class="dish-info-badge">Burgers</div>
+                                    <div class="dish-info-badge">Burger</div>
                                 </div>
                                 <div class="dish-info">
                                     <h3>The Mont</h3>
@@ -133,7 +152,16 @@ export class CafeteriaPage extends HTMLElement {
                             <span><i class="ti-location-pin" style="font-size: 32px;"></i></span>
                             <span id="cta-close-bottom-slider"><img src="/assets/svg/icon-close.png" class="icon-close" /></span>
                         </div>
-                        <div class="restaurant-data">
+                        <div class="dish-add-to-cart-sheet">
+                            <img src="/assets/img/00.png" alt="Product Image">
+                            <h2>Burger</h2>
+                            <p>Price: <span class="dish-price">10 Pts</span></p>
+                            <div class="quantity">
+                                <span class="decrement decrement-cta">-</span>
+                                <input type="text" class="quantity-input" value="1">
+                                <span class="increment increment-cta">+</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -183,6 +211,16 @@ export class CafeteriaPage extends HTMLElement {
                     // clearAndAppendContent('');
                 }));
             }
+
+            const commonCategoryCards = pageRoot.querySelectorAll('.common-category-card');
+            commonCategoryCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    commonCategoryCards.forEach(innerCard => {
+                        innerCard.classList.remove('active');
+                    });
+                    card.classList.add('active');
+                });
+            });
 
         })();
         
