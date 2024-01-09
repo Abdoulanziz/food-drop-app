@@ -330,3 +330,60 @@ h4.value.flex img {
   }
 }
 
+
+.settings-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-checkbox input[type="checkbox"] {
+  block-size: 2.2rem; /* Increase the height of the checkbox */
+}
+
+.settings-checkbox input[type="checkbox"].switch {
+  overflow: hidden;
+  border: 0;
+  border-radius: 3rem; /* Increase the border-radius for a rounder shape */
+  inline-size: 4rem; /* Increase the width of the checkbox */
+  appearance: none;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 0;
+  position: relative;
+  border: 1px solid #d1d5db;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.settings-checkbox input[type="checkbox"].switch:before {
+  content: "";
+  inline-size: 1.8rem; /* Increase the width of the inner circle */
+  block-size: 1.8rem; /* Increase the height of the inner circle */
+  transform: translatex(0);
+  position: absolute;
+  border-radius: 50%;
+  margin: 0 0 0 0.25rem; /* Adjust the margin for equal spacing on both sides */
+  background: #d1d5db;
+  transition: 0.2s ease-in;
+}
+
+.settings-checkbox input[type="checkbox"].switch:checked {
+  background: #34bf49;
+  border-color: #31b344;
+}
+
+.settings-checkbox input[type="checkbox"].switch:checked:before {
+  transform: translatex(100%);
+  background: #fff;
+}
+
+.settings-checkbox label {
+  cursor: pointer;
+  color: #848484;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0; /* Increase the left margin for better spacing */
+}

@@ -50,17 +50,16 @@ export class OrdersPage extends HTMLElement {
                 <div class="container cards">
                     <div id="cards-item" class="cards-item" style="margin-block-end: 6.6rem;">
                         <ul class="" id="orders" style="list-style-type: none;">
-                            <h3 class="dashboard-category" style="margin-block-end: .4rem;">All orders (12)</h3>
+                            <h3 class="dashboard-category" style="margin-block-end: .4rem;">All orders (1)</h3>
                             <div class="cards-list" style="padding-inline: 0;">
 
                             <li class="cards-list-item-plain" style="padding-block: .4rem;">
                                 <div class="content flex" style="justify-content: space-between;align-items: flex-end;">
                                 <div>
-                                    <img src="/assets/img/salads.png" alt="" style="inline-size: 32px;block-size: 32px;">
-                                    <h5>Pizza</h5>
-                                    <h6>75 Pts</h6>
+                                    <img src="/assets/img/00.png" alt="" style="inline-size: 54px;block-size: 54px;border-radius: 9px;">
+                                    <h3 style="color: #848484; font-weight: normal;">Pizza</h3>
                                 </div>
-                                <h6>2h ago</h6>
+                                <h4 style="color: #848484;">2h ago</h4>
                                 </div>
                             </li>
                             </div>

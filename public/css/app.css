@@ -808,7 +808,7 @@ body,
 .btn-checkout {
   font-size: 20px;
   padding: .9rem .86rem;
-  margin-block: 1.2rem;
+  margin-block: 0 1.2rem;
 
   inline-size: 100%;
   color: #333333;
@@ -901,8 +901,8 @@ body,
 .cards-setting-item .content h5 {
   font-size: 14px;
   font-weight: 400;
-  color: #525f7f;
-  color: #525f7f;
+  color: #848484;
+  color: #848484;
 }
 
 .cards-setting-item .content h6 {
@@ -912,7 +912,7 @@ body,
 }
 
 .cards-setting-item .content .label {
-  color: #525f7f;
+  color: #848484;
 }
 
 /* Cards */
